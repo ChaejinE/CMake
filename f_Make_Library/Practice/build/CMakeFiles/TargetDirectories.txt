@@ -1,0 +1,6 @@
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/CMakeFiles/rebuild_cache.dir
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/CMakeFiles/program.dir
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/CMakeFiles/edit_cache.dir
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/lib/CMakeFiles/rebuild_cache.dir
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/lib/CMakeFiles/shape.dir
+/home/cjlotto/git_clone/CMake/f_Make_Library/Practice/build/lib/CMakeFiles/edit_cache.dir

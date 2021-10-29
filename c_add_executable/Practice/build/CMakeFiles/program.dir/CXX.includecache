@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cjlotto/git_clone/CMake/c_add_executable/Practice/foo.cpp
+foo.h
+/home/cjlotto/git_clone/CMake/c_add_executable/Practice/foo.h
+
+/home/cjlotto/git_clone/CMake/c_add_executable/Practice/foo.h
+
+/home/cjlotto/git_clone/CMake/c_add_executable/Practice/main.cpp
+iostream
+-
+foo.h
+/home/cjlotto/git_clone/CMake/c_add_executable/Practice/foo.h
+
