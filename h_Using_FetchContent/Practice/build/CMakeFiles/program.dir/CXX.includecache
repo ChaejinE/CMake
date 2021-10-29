@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/color.h
+
+../includes/shape.h
+color.h
+../includes/color.h
+
+/home/cjlotto/git_clone/CMake/h_Using_FetchContent/Practice/main.cpp
+iostream
+-
+shape.h
+/home/cjlotto/git_clone/CMake/h_Using_FetchContent/Practice/shape.h
+

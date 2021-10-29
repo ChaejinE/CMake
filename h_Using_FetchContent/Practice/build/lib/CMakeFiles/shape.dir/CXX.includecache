@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/color.h
+
+/home/cjlotto/git_clone/CMake/h_Using_FetchContent/Practice/lib/color.cpp
+color.h
+/home/cjlotto/git_clone/CMake/h_Using_FetchContent/Practice/lib/color.h
+

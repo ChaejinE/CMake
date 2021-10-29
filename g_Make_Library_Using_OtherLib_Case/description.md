@@ -73,3 +73,23 @@ file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
 
 add_library(shape STATIC ${SRC_FILES})
 ```
+- CMake에서 파일들을 관련해 다룰 때 사용하는 명령어이다.
+- GLOB-RECURSE 옵션 : 인자로 주어진 디렉토리와 해당 디렉토리 안에 있는 모든 하위 디렉토리 까지 재귀적으로 살펴본다는 의미
+- 참고 : CMake에서 모든 변수들은  ${변수 이름}과 같은 식으로 참조한다.
+  - 중괄호 !
+- 주어진 디렉토리
+  - ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
+  - ${CMAKE_CURRENT_SOURCE_DIR} : CMake에서 기본으로 제공하는 변수 현재 CMakeLists.txt가 위치한 디렉토리. 즉, 현재 디렉토리
+- 위 명령을 *현재 디렉토리 안에 있는 모든 .cpp로 끝나는 파일들(하위 디렉토리 포함)**을 나타내며 해당 파일들을 모두 모아 SRC_FILES 라는 변수를 구성하라는 의미다.
+- 하위 디렉토리를 포함하고 싶지 않다면 GLOB_RECURESE -> GLOB 으로 바꿔주면 된다.
+- CONFIGURE_DEPENDS 옵션 : GLOB으로 불러오는 파일 목록이 이전과 다를 경우(파일 추가 삭제 시) CMake를 다시 실행해서 빌드 파일을 재생성하라는 의미
+- 만약 디렉토리에 파일이 추가되더라도 cmake .. 실행할 필요 없이 그냥 make만 해도 CMake가 다시 실행되면서 빌드 파일을 재작성한다.
+  - 아주 편리
+- 사실 CMake에선 위 명령으로 파일들을 읽어들이는 것을 권장하지 않는다.
+  - 파일이 추가 되더라도 CMake가 생성한 빌드 파일 안에 명시된 파일들이 바뀌는 것은 아니므로 CMake를 통해 어차피 빌드 파일을 생성해야 하기 때문이다.
+  - CONFIGURE_DEPENDS 옵션을 주긴하지만 모든 빌드 시스템에서 안정적으로 동작하지는 않는다고 한다.
+
+```CMake
+add_library(shape STATIC ${SRC_FILES})
+```
+- SRC_FILES 변수에 파일들의 목록이 들어가있으므로 필요한 파일들을 모두 지정할 수 있다.

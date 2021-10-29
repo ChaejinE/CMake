@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/shape.h
+
+/home/cjlotto/git_clone/CMake/g_Make_Library_Using_OtherLib_Case/Practice/lib/shape.cpp
+iostream
+-
+thread
+-
+shape.h
+/home/cjlotto/git_clone/CMake/g_Make_Library_Using_OtherLib_Case/Practice/lib/shape.h
+
